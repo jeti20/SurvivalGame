@@ -39,20 +39,20 @@ public class Inventory : MonoBehaviour
     // singleton
     public static Inventory instance;
 
-    void Awake ()
+    void Awake()
     {
         instance = this;
         controller = GetComponent<PlayerController>();
         needs = GetComponent<PlayerNeeds>();
     }
 
-    void Start ()
+    void Start()
     {
         inventoryWindow.SetActive(false);
         slots = new ItemSlot[uiSlots.Length];
 
         // initialize the slots
-        for(int x = 0; x < slots.Length; x++)
+        for (int x = 0; x < slots.Length; x++)
         {
             slots[x] = new ItemSlot();
             uiSlots[x].index = x;
@@ -63,18 +63,18 @@ public class Inventory : MonoBehaviour
     }
 
     // called when we give an inventory input - managed by the Input System
-    public void OnInventoryButton (InputAction.CallbackContext context)
+    public void OnInventoryButton(InputAction.CallbackContext context)
     {
-        if(context.phase == InputActionPhase.Started)
+        if (context.phase == InputActionPhase.Started)
         {
             Toggle();
         }
     }
 
     // opens or closes the inventory
-    public void Toggle ()
+    public void Toggle()
     {
-        if(inventoryWindow.activeInHierarchy)
+        if (inventoryWindow.activeInHierarchy)
         {
             inventoryWindow.SetActive(false);
             onCloseInventory.Invoke();
@@ -86,24 +86,24 @@ public class Inventory : MonoBehaviour
             onOpenInventory.Invoke();
             ClearSelectedItemWindow();
             controller.ToggleCursor(true);
-        }    
+        }
     }
 
     // is the inventory currently open?
-    public bool IsOpen ()
+    public bool IsOpen()
     {
         return inventoryWindow.activeInHierarchy;
     }
 
     // adds the requested item to the player's inventory
-    public void AddItem (ItemData item)
+    public void AddItem(ItemData item)
     {
         // does this item have a stack it can be added to?
-        if(item.canStack)
+        if (item.canStack)
         {
             ItemSlot slotToStackTo = GetItemStack(item);
 
-            if(slotToStackTo != null)
+            if (slotToStackTo != null)
             {
                 slotToStackTo.quantity++;
                 UpdateUI();
@@ -114,7 +114,7 @@ public class Inventory : MonoBehaviour
         ItemSlot emptySlot = GetEmptySlot();
 
         // do we have an empty slot for the item?
-        if(emptySlot != null)
+        if (emptySlot != null)
         {
             emptySlot.item = item;
             emptySlot.quantity = 1;
@@ -127,17 +127,17 @@ public class Inventory : MonoBehaviour
     }
 
     // spawns the item infront of the player
-    void ThrowItem (ItemData item)
+    void ThrowItem(ItemData item)
     {
         Instantiate(item.dropPrefab, dropPosition.position, Quaternion.Euler(Vector3.one * Random.value * 360.0f));
     }
 
     // updates the UI slots
-    void UpdateUI ()
+    void UpdateUI()
     {
-        for(int x = 0; x < slots.Length; x++)
+        for (int x = 0; x < slots.Length; x++)
         {
-            if(slots[x].item != null)
+            if (slots[x].item != null)
                 uiSlots[x].Set(slots[x]);
             else
                 uiSlots[x].Clear();
@@ -146,11 +146,11 @@ public class Inventory : MonoBehaviour
 
     // returns the item slot that the requested item can be stacked on
     // returns null if there is no stack available
-    ItemSlot GetItemStack (ItemData item)
+    ItemSlot GetItemStack(ItemData item)
     {
-        for(int x = 0; x < slots.Length; x++)
+        for (int x = 0; x < slots.Length; x++)
         {
-            if(slots[x].item == item && slots[x].quantity < item.maxStackAmount)
+            if (slots[x].item == item && slots[x].quantity < item.maxStackAmount)
                 return slots[x];
         }
 
@@ -159,11 +159,11 @@ public class Inventory : MonoBehaviour
 
     // returns an empty slot in the inventory
     // if there are no empty slots - return null
-    ItemSlot GetEmptySlot ()
+    ItemSlot GetEmptySlot()
     {
-        for(int x = 0; x < slots.Length; x++)
+        for (int x = 0; x < slots.Length; x++)
         {
-            if(slots[x].item == null)
+            if (slots[x].item == null)
                 return slots[x];
         }
 
@@ -171,10 +171,10 @@ public class Inventory : MonoBehaviour
     }
 
     // called when we click on an item slot
-    public void SelectItem (int index)
+    public void SelectItem(int index)
     {
         // we can't select the slot if there's no item
-        if(slots[index].item == null)
+        if (slots[index].item == null)
             return;
 
         // set the selected item preview window
@@ -188,7 +188,7 @@ public class Inventory : MonoBehaviour
         selectedItemStatNames.text = string.Empty;
         selectedItemStatValues.text = string.Empty;
 
-        for(int x = 0; x < selectedItem.item.consumables.Length; x++)
+        for (int x = 0; x < selectedItem.item.consumables.Length; x++)
         {
             selectedItemStatNames.text += selectedItem.item.consumables[x].type.ToString() + "\n";
             selectedItemStatValues.text += selectedItem.item.consumables[x].value.ToString() + "\n";
@@ -201,7 +201,7 @@ public class Inventory : MonoBehaviour
     }
 
     // called when the inventory opens or the currently selected item has depleted
-    void ClearSelectedItemWindow ()
+    void ClearSelectedItemWindow()
     {
         // clear the text elements
         selectedItem = null;
@@ -218,15 +218,15 @@ public class Inventory : MonoBehaviour
     }
 
     // called when the "Use" button is pressed
-    public void OnUseButton ()
+    public void OnUseButton()
     {
         // is the selected item a consumable?
-        if(selectedItem.item.type == ItemType.Consumable)
+        if (selectedItem.item.type == ItemType.Consumable)
         {
             // loop through all the needs it will contribute to
-            for(int x = 0; x < selectedItem.item.consumables.Length; x++)
+            for (int x = 0; x < selectedItem.item.consumables.Length; x++)
             {
-                switch(selectedItem.item.consumables[x].type)
+                switch (selectedItem.item.consumables[x].type)
                 {
                     case ConsumableType.Health: needs.Heal(selectedItem.item.consumables[x].value); break;
                     case ConsumableType.Hunger: needs.Eat(selectedItem.item.consumables[x].value); break;
@@ -240,9 +240,9 @@ public class Inventory : MonoBehaviour
     }
 
     // called when the "Equip" button is pressed
-    public void OnEquipButton ()
+    public void OnEquipButton()
     {
-        if(uiSlots[curEquipIndex].equipped)
+        if (uiSlots[curEquipIndex].equipped)
             UnEquip(curEquipIndex);
 
         uiSlots[selectedItemIndex].equipped = true;
@@ -254,38 +254,38 @@ public class Inventory : MonoBehaviour
     }
 
     // unequips the requested item
-    void UnEquip (int index)
+    void UnEquip(int index)
     {
         uiSlots[index].equipped = false;
         EquipManager.instance.UnEquip();
         UpdateUI();
 
-        if(selectedItemIndex == index)
+        if (selectedItemIndex == index)
             SelectItem(index);
-    }    
+    }
 
     // called when the "UnEquip" button is pressed
-    public void OnUnEquipButton ()
+    public void OnUnEquipButton()
     {
         UnEquip(selectedItemIndex);
     }
 
     // called when the "Drop" button is pressed
-    public void OnDropButton ()
+    public void OnDropButton()
     {
         ThrowItem(selectedItem.item);
         RemoveSelectedItem();
     }
 
     // removes the currently selected item
-    void RemoveSelectedItem ()
+    void RemoveSelectedItem()
     {
         selectedItem.quantity--;
 
         // have we dropped all of this stack?
-        if(selectedItem.quantity == 0)
+        if (selectedItem.quantity == 0)
         {
-            if(uiSlots[selectedItemIndex].equipped == true)
+            if (uiSlots[selectedItemIndex].equipped == true)
                 UnEquip(selectedItemIndex);
 
             selectedItem.item = null;
@@ -295,17 +295,17 @@ public class Inventory : MonoBehaviour
         UpdateUI();
     }
 
-    public void RemoveItem (ItemData item)
+    public void RemoveItem(ItemData item)
     {
-        for(int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            if(slots[i].item == item)
+            if (slots[i].item == item)
             {
                 slots[i].quantity--;
 
-                if(slots[i].quantity == 0)
+                if (slots[i].quantity == 0)
                 {
-                    if(uiSlots[i].equipped == true)
+                    if (uiSlots[i].equipped == true)
                         UnEquip(i);
 
                     slots[i].item = null;
@@ -319,16 +319,16 @@ public class Inventory : MonoBehaviour
     }
 
     // does the player have "quantity" amount of "item"s?
-    public bool HasItems (ItemData item, int quantity)
+    public bool HasItems(ItemData item, int quantity)
     {
         int amount = 0;
 
-        for(int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            if(slots[i].item == item)
+            if (slots[i].item == item)
                 amount += slots[i].quantity;
 
-            if(amount >= quantity)
+            if (amount >= quantity)
                 return true;
         }
 
