@@ -64,7 +64,7 @@ public class NPC : MonoBehaviour, IDamagable
     {
         SetState(AIState.Wandering);
     }
-
+    public float agentVelocityMagnitute;
     void Update ()
     {
         // get player distance
@@ -79,6 +79,7 @@ public class NPC : MonoBehaviour, IDamagable
             case AIState.Attacking: AttackingUpdate(); break;
             case AIState.Fleeing: FleeingUpdate(); break;
         }
+        agentVelocityMagnitute = agent.velocity.magnitude;
     }
 
     // called every frame if our state is IDLE or WANDERING
