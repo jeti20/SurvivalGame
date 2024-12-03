@@ -12,6 +12,7 @@ Already implemented:
 - Enemy AI
 - Crafting in game
 - Menu (in developoment)
+- Animal AI
 
   
 To Do:
@@ -19,7 +20,8 @@ To Do:
   - Improve terrain
   - Add NPC
   - Add more enemys
-  - Add animals
+  - ~~Add animals~~
+  - ~~Animal AI~~
   - Make a cutscenes for the beggining
   - Add sounds for different actions
   - Add background music
