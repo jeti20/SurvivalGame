@@ -7,12 +7,16 @@ Already implemented:
 - Player Needs System
 - Inventory management
 - Collecting items
-- System for adding new items to the game (ScriptableItems)
+- Damageable (Interface)
+- System for adding new items to the game (ScriptableObjects)
+- Notification System (ScirptablesObjects)
 - Equipping items
 - Enemy AI
+- Animal AI
 - Crafting in game
 - Menu (in developoment)
-- Animal AI
+- Cutscene Intro
+
 
   
 To Do:
@@ -22,8 +26,9 @@ To Do:
   - Add more enemys
   - ~~Add animals~~
   - ~~Animal AI~~
-  - Make a cutscenes for the beggining
+  - ~~Make a cutscenes for the beggining~~
   - Add sounds for different actions
   - Add background music
+  - ~~Notification System~~
 
 ![image](https://github.com/user-attachments/assets/81d27380-6995-49bb-aeb2-61659c64866f)
