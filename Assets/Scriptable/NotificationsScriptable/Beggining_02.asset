@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501d6fd8ccc038948a6eab2b3aced84c, type: 3}
   m_Name: Beggining_02
   m_EditorClassIdentifier: 
-  yourIcon: {fileID: 21300000, guid: d839d4ccaa3255a48abb2a0c7d7b7bea, type: 3}
-  notificationMessage: campfire can hur you, be careful1
-  removeAfterExit: 1
+  yourIcon: {fileID: 21300000, guid: f0694fca12fb54144beb1acc468894bb, type: 3}
+  notificationMessage: Your hunger and thirst are dropping! Fast find some food!
+  removeAfterExit: 0
   disableAfterTimer: 1
   disabletimer: 4

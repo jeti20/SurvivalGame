@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+//replaced by NotificationTriggerScriptable.cs
+
 
 public class NotificationtriggerEvent : MonoBehaviour
 {
