@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 3307900779356039136}
   - component: {fileID: 5673936606440971255}
   - component: {fileID: 6550343502428850157}
-  - component: {fileID: 8316043338592999586}
+  - component: {fileID: 649072583613711318}
   m_Layer: 0
   m_Name: Goat
   m_TagString: Untagged
@@ -241,9 +241,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585660966253951188}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.00000086426724, z: -0, w: 1}
   m_LocalPosition: {x: 886.692, y: 3.417108, z: 151.16452}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5834, y: 1.5834, z: 1.5834}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4771970275842957358}
@@ -265,7 +265,7 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 4
   dropOnDeath:
-  - {fileID: 11400000, guid: 23a75514a6030584faca7b871480670a, type: 2}
+  - {fileID: 11400000, guid: c4330ff49472c6847be34dd44f2dba45, type: 2}
   safeDistance: 1
   detectDistance: 2
   minWanderDistance: 10
@@ -295,8 +295,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &8316043338592999586
-CapsuleCollider:
+--- !u!65 &649072583613711318
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -313,11 +313,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.9572662
-  m_Height: 1.9145324
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.82, z: 0.15726626}
+  serializedVersion: 3
+  m_Size: {x: 0.68896484, y: 1.4459338, z: 1.7044678}
+  m_Center: {x: -0.035583496, y: 0.7026274, z: 0.1948812}
 --- !u!1 &670796017432221563
 GameObject:
   m_ObjectHideFlags: 0

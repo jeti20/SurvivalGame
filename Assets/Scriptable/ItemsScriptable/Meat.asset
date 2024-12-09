@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faebf057cc9fa4b4ab2020816d46b5ab, type: 3}
+  m_Name: Meat
+  m_EditorClassIdentifier: 
+  displayName: Meat
+  description: This is a food you can eat.
+  type: 2
+  icon: {fileID: 21300000, guid: 070fdaac6a507fa4ca785ba2024bf867, type: 3}
+  dropPrefab: {fileID: 6795754945828819806, guid: ecafba9fdd5951540b3a197e15dc6078, type: 3}
+  canStack: 1
+  maxStackAmount: 12
+  consumables:
+  - type: 0
+    value: 100
+  - type: 1
+    value: 10
+  - type: 2
+    value: 30
+  equipPrefab: {fileID: 0}
