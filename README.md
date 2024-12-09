@@ -16,7 +16,7 @@ Already implemented:
 - Crafting in game
 - Menu (in developoment)
 - Cutscene Intro
-
+- Coneccted notifiaction sytem with picking up items
 
   
 To Do:
