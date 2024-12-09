@@ -10,7 +10,7 @@ public class NotificationTriggerScriptable : MonoBehaviour
     [SerializeField] private Image characterIconUI;
 
     [Header("ScriptableObject")]
-    [SerializeField] private NotificationSO noteScriptable;
+    [SerializeField] public NotificationSO noteScriptable;
 
     [Header("Notification Animation")]
     [SerializeField] private Animator notificationAnim;
@@ -40,7 +40,7 @@ public class NotificationTriggerScriptable : MonoBehaviour
         }
     }
 
-    IEnumerator EnableNotification()
+    public IEnumerator EnableNotification()
     {
         notificationAnim.Play("NotificationFadeIn");
         notificationTextUI.text = noteScriptable.notificationMessage; // Przypisanie tekstu z pola `string`
@@ -48,13 +48,15 @@ public class NotificationTriggerScriptable : MonoBehaviour
 
         if (noteScriptable.disableAfterTimer)
         {
+            Debug.Log("StartRutynyNotifikacji");
             yield return new WaitForSeconds(noteScriptable.disabletimer);
             RemoveNotification();
         }
     }
 
-    private void RemoveNotification()
+    public  void RemoveNotification()
     {
+        Debug.Log("KoniecRutynyNotifikacji");
         notificationAnim.Play("NotificationFadeOut");
         gameObject.SetActive(false);
     }

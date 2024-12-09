@@ -6,6 +6,15 @@ public class ItemObject : MonoBehaviour, IInteractable
 {
     public ItemData item;
 
+    [Header("ScriptableObjectNotification")]
+    [SerializeField] private NotificationSO noteScriptable;
+    private NotificationTriggerScriptable notificationTrigger;
+
+    private void Awake()
+    {
+        notificationTrigger = GetComponent<NotificationTriggerScriptable>();
+    }
+
     // returns the prompt we want to show on-screen when hovering over the item
     public string GetInteractPrompt()
     {
@@ -16,6 +25,15 @@ public class ItemObject : MonoBehaviour, IInteractable
     public void OnInteract()
     {
         Inventory.instance.AddItem(item);
-        Destroy(gameObject);
+        if (noteScriptable != null)
+        {
+            
+            StartCoroutine(notificationTrigger.EnableNotification());
+            
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
