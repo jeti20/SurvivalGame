@@ -54,7 +54,7 @@ public class NotificationTriggerScriptable : MonoBehaviour
         }
     }
 
-    public  void RemoveNotification()
+    private  void RemoveNotification()
     {
         Debug.Log("KoniecRutynyNotifikacji");
         notificationAnim.Play("NotificationFadeOut");

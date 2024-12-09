@@ -17,4 +17,4 @@ MonoBehaviour:
     use it.
   removeAfterExit: 0
   disableAfterTimer: 1
-  disabletimer: 2
+  disabletimer: 4

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Beggining_03
   m_EditorClassIdentifier: 
   yourIcon: {fileID: 21300000, guid: f0694fca12fb54144beb1acc468894bb, type: 3}
-  notificationMessage: Your hunger and thirst are dropping! Fast find some food!
+  notificationMessage: You are hungry and thirsty. Fast find some food! Look under
+    your feet while walking
   removeAfterExit: 0
   disableAfterTimer: 1
   disabletimer: 4

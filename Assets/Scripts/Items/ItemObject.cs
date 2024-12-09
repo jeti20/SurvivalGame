@@ -7,7 +7,6 @@ public class ItemObject : MonoBehaviour, IInteractable
     public ItemData item;
 
     [Header("ScriptableObjectNotification")]
-    [SerializeField] private NotificationSO noteScriptable;
     private NotificationTriggerScriptable notificationTrigger;
 
     private void Awake()
@@ -25,15 +24,26 @@ public class ItemObject : MonoBehaviour, IInteractable
     public void OnInteract()
     {
         Inventory.instance.AddItem(item);
-        if (noteScriptable != null)
+
+        //check if the notificationTrigger component is assigned and has the appropriate configuration
+        if (notificationTrigger != null && notificationTrigger.noteScriptable != null)
         {
             
             StartCoroutine(notificationTrigger.EnableNotification());
-            
+            DestroyAllChildren();  // Zniszczenie wszystkich dzieci obiektu
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    // Function to destroy all children of an object, only used when after picking up item  notification have to pops out
+    private void DestroyAllChildren()
+    {
+        foreach (Transform child in this.transform)
+        {
+            Destroy(child.gameObject);  
         }
     }
 }
