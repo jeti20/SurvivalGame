@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5039a8c506ce8fb4881eb6ac5891ab24, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  itemToCraft: {fileID: 11400000, guid: bcdc190e2b0e2aa4f89b232857404778, type: 2}
+  itemToCraft: {fileID: 11400000, guid: 62eb7795edec1cc4d9569cacc3fa3eca, type: 2}
   cost:
   - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
     quantity: 1
