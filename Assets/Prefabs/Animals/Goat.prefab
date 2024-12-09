@@ -261,9 +261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77044bd5df75c924d88d971683c97fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  walkSpeed: 2
-  runSpeed: 4
+  health: 5
+  walkSpeed: 1
+  runSpeed: 2
   dropOnDeath:
   - {fileID: 11400000, guid: c4330ff49472c6847be34dd44f2dba45, type: 2}
   safeDistance: 1
@@ -314,8 +314,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.68896484, y: 1.4459338, z: 1.7044678}
-  m_Center: {x: -0.035583496, y: 0.7026274, z: 0.1948812}
+  m_Size: {x: 0.68896484, y: 2.05139, z: 1.3684145}
+  m_Center: {x: -0.03558349, y: 1.0053555, z: 0.28594524}
 --- !u!1 &670796017432221563
 GameObject:
   m_ObjectHideFlags: 0

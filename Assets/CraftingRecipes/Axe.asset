@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToCraft: {fileID: 11400000, guid: c09d5929fea55a140a712d9700a96b00, type: 2}
   cost:
-  - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+  - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
     quantity: 2
-  - item: {fileID: 11400000, guid: 8431763eeaa75064fa0cb74ac4c77319, type: 2}
+  - item: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
     quantity: 2

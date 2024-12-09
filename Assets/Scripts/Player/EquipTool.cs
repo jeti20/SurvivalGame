@@ -43,24 +43,27 @@ public class EquipTool : Equip
         attacking = false;
     }
 
-    // called when the animation impacts
-    public void OnHit ()
+    public void OnHit()
     {
         Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, attackDistance))
+        // Wizualizacja raycastu w oknie Scene (2 razy dłuższy)
+        Debug.DrawRay(ray.origin, ray.direction * (attackDistance * 3), Color.red, 1.0f);
+
+        if (Physics.Raycast(ray, out hit, attackDistance * 3))
         {
             // did we hit a resource?
-            if(doesGatherResources && hit.collider.GetComponent<Resource>())
+            if (doesGatherResources && hit.collider.GetComponent<Resource>())
             {
                 hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
             }
             // did we hit a damagable?
-            if(doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
+            if (doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
             {
                 hit.collider.GetComponent<IDamagable>().TakePhysicalDamage(damage);
             }
         }
     }
+
 }
