@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Crafting Table
   icon: {fileID: 21300000, guid: 9dbe7a28fdb145045a5ec180ea81d575, type: 3}
-  spawnPrefab: {fileID: 8347218388464684071, guid: 84748e813f1efad4699ecf1364bb2975, type: 3}
-  previewPrefab: {fileID: 7116050442509911871, guid: 654b526045d1a4d46ae9294eee9bac7c, type: 3}
+  spawnPrefab: {fileID: 5771483245165936520, guid: 7f5fda0ff3acc294b8f0c4504868b5f4, type: 3}
+  previewPrefab: {fileID: 5771483245165936520, guid: ab7a0e3505889e245a56f5c9911ed890, type: 3}
   cost:
-  - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
-    quantity: 2
-  - item: {fileID: 11400000, guid: 8431763eeaa75064fa0cb74ac4c77319, type: 2}
-    quantity: 2
+  - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
+    quantity: 10
+  - item: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
+    quantity: 20

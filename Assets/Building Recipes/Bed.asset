@@ -18,4 +18,6 @@ MonoBehaviour:
   previewPrefab: {fileID: 7903338035569753452, guid: 4d668a88e6e00a04b925b4e3639ce242, type: 3}
   cost:
   - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
-    quantity: 4
+    quantity: 35
+  - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+    quantity: 10

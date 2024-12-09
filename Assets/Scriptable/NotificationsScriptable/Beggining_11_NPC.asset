@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 501d6fd8ccc038948a6eab2b3aced84c, type: 3}
-  m_Name: Beggining_07
+  m_Name: Beggining_11_NPC
   m_EditorClassIdentifier: 
-  yourIcon: {fileID: 21300000, guid: b776a8890e2151144a7bf8ac0e84c4ba, type: 3}
-  notificationMessage: It looks liek a Anvil, maybe I can do something with it...
+  yourIcon: {fileID: 21300000, guid: e246550b772e3594cbc209855a391e13, type: 3}
+  notificationMessage: Oh new, man... I haven't seen people in a while, you probably
+    don't remember how you got here. You probably want to go home. I'm running out
+    of resources to live, bring me a zombie talisman and 15 sheep meat.
   removeAfterExit: 0
   disableAfterTimer: 1
-  disabletimer: 4
+  disabletimer: 10
