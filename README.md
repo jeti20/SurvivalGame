@@ -32,3 +32,6 @@ To Do:
   - ~~Notification System~~
 
 ![image](https://github.com/user-attachments/assets/81d27380-6995-49bb-aeb2-61659c64866f)
+
+Assets used:
+- https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032
