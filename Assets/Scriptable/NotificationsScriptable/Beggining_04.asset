@@ -17,4 +17,5 @@ MonoBehaviour:
     thirst dissapear a little bit.
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 1
   disabletimer: 5

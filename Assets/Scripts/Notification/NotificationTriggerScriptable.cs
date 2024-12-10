@@ -34,9 +34,13 @@ public class NotificationTriggerScriptable : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Exit");
-        if (other.CompareTag("Player") && noteScriptable.removeAfterExit)
+        if (other.CompareTag("Player") && noteScriptable.removeAfterExit && noteScriptable.disableTrigger)
         {
-            RemoveNotification();
+            RemoveNotificationWithTrigger();
+        }
+        else
+        {
+            RemoveNotificationWithTrigger();
         }
     }
 
@@ -46,18 +50,30 @@ public class NotificationTriggerScriptable : MonoBehaviour
         notificationTextUI.text = noteScriptable.notificationMessage; // Przypisanie tekstu z pola `string`
         characterIconUI.sprite = noteScriptable.yourIcon;
 
-        if (noteScriptable.disableAfterTimer)
+        if (noteScriptable.disableAfterTimer && noteScriptable.disableTrigger)
         {
             Debug.Log("StartRutynyNotifikacji");
             yield return new WaitForSeconds(noteScriptable.disabletimer);
-            RemoveNotification();
+            RemoveNotificationWithTrigger();
+        }
+        else
+        {
+            yield return new WaitForSeconds(noteScriptable.disabletimer);
+            RemoveNotificationWithOutTrigger();
         }
     }
 
-    private  void RemoveNotification()
+    private  void RemoveNotificationWithTrigger()
     {
         Debug.Log("KoniecRutynyNotifikacji");
         notificationAnim.Play("NotificationFadeOut");
         gameObject.SetActive(false);
+    }
+
+    private void RemoveNotificationWithOutTrigger()
+    {
+        Debug.Log("KoniecRutynyNotifikacji");
+        notificationAnim.Play("NotificationFadeOut");
+        //gameObject.SetActive(false);
     }
 }

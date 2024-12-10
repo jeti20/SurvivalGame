@@ -16,4 +16,5 @@ MonoBehaviour:
   notificationMessage: It looks liek a Anvil, maybe I can do something with it...
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 1
   disabletimer: 4

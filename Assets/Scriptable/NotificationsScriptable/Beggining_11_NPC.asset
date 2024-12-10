@@ -18,4 +18,5 @@ MonoBehaviour:
     of resources to live, bring me a zombie talisman and 15 sheep meat.
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 0
   disabletimer: 10

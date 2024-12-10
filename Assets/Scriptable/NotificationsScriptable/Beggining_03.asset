@@ -17,4 +17,5 @@ MonoBehaviour:
     your feet while walking
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 1
   disabletimer: 4

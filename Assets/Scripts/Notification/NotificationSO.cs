@@ -13,5 +13,6 @@ public class NotificationSO : ScriptableObject
     [Header("Notification Removal")]
     public bool removeAfterExit = false;
     public bool disableAfterTimer = false;
+    public bool disableTrigger = false;
     public float disabletimer = 4f;
 }

@@ -16,4 +16,5 @@ MonoBehaviour:
   notificationMessage: 'You have to find a axe somewhere nerbay. '
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 1
   disabletimer: 4

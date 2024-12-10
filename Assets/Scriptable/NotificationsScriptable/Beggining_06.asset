@@ -17,4 +17,5 @@ MonoBehaviour:
     item and click [DROP]. Item will be excluded from your inventory
   removeAfterExit: 0
   disableAfterTimer: 1
+  disableTrigger: 1
   disabletimer: 7
