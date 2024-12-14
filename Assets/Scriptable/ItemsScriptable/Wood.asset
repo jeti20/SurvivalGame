@@ -15,7 +15,9 @@ MonoBehaviour:
   displayName: Wood
   description: A common resource, gathered from trees.
   type: 0
-  icon: {fileID: 21300000, guid: 04bef2a98560abc46a165c893274b1cf, type: 3}
-  dropPrefab: {fileID: 3793071277846155305, guid: 5c91e638c4540ea42bf8c0011b36f749, type: 3}
+  icon: {fileID: 21300000, guid: 8328b65805522e243bf3f66599c3e33d, type: 3}
+  dropPrefab: {fileID: 3793071277846155305, guid: b6ada1b7e26c9744990bb08aa92d5fba, type: 3}
   canStack: 1
-  maxStackAmount: 12
+  maxStackAmount: 45
+  consumables: []
+  equipPrefab: {fileID: 0}
