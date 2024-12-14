@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 mouseDelta;
 
+    private AudioSource audioSource;
+    [SerializeField] AudioClip walkSound;
+
     [HideInInspector]
     public bool canLook = true;
 
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         // get our components
         rig = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
 
         instance = this;
     }
@@ -54,6 +58,8 @@ public class PlayerController : MonoBehaviour
             CameraLook();
     }
 
+    
+
     void Move ()
     {
         // calculate the move direction relative to where we're facing.
@@ -63,7 +69,17 @@ public class PlayerController : MonoBehaviour
 
         // assign our Rigidbody velocity
         rig.linearVelocity = dir;
+        
     }
+
+    /*private void WalkingSound()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(walkSound);
+        }
+    }*/
+
 
     void CameraLook ()
     {
@@ -89,11 +105,13 @@ public class PlayerController : MonoBehaviour
         if(context.phase == InputActionPhase.Performed)
         {
             curMovementInput = context.ReadValue<Vector2>();
+            audioSource.PlayOneShot(walkSound);
         }
         // have we let go of a movement button?
         else if(context.phase == InputActionPhase.Canceled)
         {
             curMovementInput = Vector2.zero;
+            audioSource.Stop();
         }
     }
 

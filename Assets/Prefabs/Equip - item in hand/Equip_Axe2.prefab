@@ -52,6 +52,8 @@ MonoBehaviour:
   canGatherStone: 0
   doesDealDamage: 0
   damage: 0
+  chopTree: {fileID: 8300000, guid: b2f1c6dd40dbd68419496ac8eb77c722, type: 3}
+  chopStone: {fileID: 8300000, guid: 3c5f83f48f6e6d245ae987bc530e6790, type: 3}
 --- !u!95 &1141910281
 Animator:
   serializedVersion: 7

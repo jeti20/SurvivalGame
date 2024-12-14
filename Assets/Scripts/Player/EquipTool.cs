@@ -26,7 +26,8 @@ public class EquipTool : Equip
         anim = GetComponent<Animator>();
         cam = Camera.main;
     }
-
+    private AudioSource audioSource;
+    
     // called when we press the attack input
     public override void OnAttackInput ()
     {
@@ -35,6 +36,7 @@ public class EquipTool : Equip
             attacking = true;
             anim.SetTrigger("Attack");
             Invoke("OnCanAttack", attackRate);
+
         }
     }
 
@@ -43,7 +45,7 @@ public class EquipTool : Equip
     {
         attacking = false;
     }
-
+    
     public void OnHit()
     {
         Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
@@ -59,11 +61,13 @@ public class EquipTool : Equip
             {
                 hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
                 Debug.Log("Stone");
+                AudioManager.instance.PlaySound(AudioManager.instance.pickaxeSound);
             }
             if (canGatherWood && hit.collider.GetComponent<Resource>() && hit.collider.CompareTag("Wood"))
             {
                 hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
                 Debug.Log("Wood");
+                AudioManager.instance.PlaySound(AudioManager.instance.axeSound);
             }
             // did we hit a damagable?
             if (doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
