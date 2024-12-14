@@ -18,7 +18,7 @@ public enum AIState
     Fleeing
 }
 
-public class NPC : MonoBehaviour, IDamagable
+public class Enemy : MonoBehaviour, IDamagable
 {
     [Header("Stats")]
     public int health;

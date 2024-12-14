@@ -338,8 +338,7 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 4
   dropOnDeath:
-  - {fileID: 11400000, guid: 8431763eeaa75064fa0cb74ac4c77319, type: 2}
-  - {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+  - {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
   aiType: 2
   detectDistance: 5
   safeDistance: 8
