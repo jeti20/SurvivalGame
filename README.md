@@ -17,6 +17,7 @@ Already implemented:
 - Menu (in developoment)
 - Cutscene Intro
 - Coneccted notifiaction sytem with picking up items
+- -Background Music
 
   
 To Do:
@@ -28,12 +29,13 @@ To Do:
   - ~~Animal AI~~
   - ~~Make a cutscenes for the beggining~~
   - Add sounds for different actions
-  - Add background music
+  - ~~Add background music~~
   - ~~Notification System~~
 
 ![image](https://github.com/user-attachments/assets/81d27380-6995-49bb-aeb2-61659c64866f)
 
 Assets used:
+- https://assetstore.unity.com/packages/3d/props/furniture/raw-wooden-furniture-free-166329
 - https://assetstore.unity.com/packages/3d/environments/urban/the-shed-10303
 - https://assetstore.unity.com/packages/3d/environments/landscapes/simple-low-poly-nature-pack-157552
 - https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032
