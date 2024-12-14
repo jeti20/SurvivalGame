@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 532293ebcdea5c64e80e428f5ad8ed10, type: 3}
-  m_Name: Shelter
+  m_Name: CraftingAnvil
   m_EditorClassIdentifier: 
-  displayName: Shelter
-  icon: {fileID: 21300000, guid: aa373d97da516294aa145ad5d4884c4a, type: 3}
-  spawnPrefab: {fileID: 6276386235804332664, guid: 7cd576e18ba34a3468ffd4aaded10d59, type: 3}
-  previewPrefab: {fileID: 5513281481021282065, guid: 3c7fab66706ecc74284124e4b3cd8717, type: 3}
+  displayName: Crafting Table
+  icon: {fileID: 21300000, guid: b776a8890e2151144a7bf8ac0e84c4ba, type: 3}
+  spawnPrefab: {fileID: 5771483245165936520, guid: 7f5fda0ff3acc294b8f0c4504868b5f4, type: 3}
+  previewPrefab: {fileID: 5771483245165936520, guid: ab7a0e3505889e245a56f5c9911ed890, type: 3}
   cost:
   - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
-    quantity: 99
+    quantity: 0
   - item: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
-    quantity: 20
+    quantity: 0

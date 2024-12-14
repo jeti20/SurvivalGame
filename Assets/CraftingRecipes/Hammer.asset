@@ -15,6 +15,6 @@ MonoBehaviour:
   itemToCraft: {fileID: 11400000, guid: 62eb7795edec1cc4d9569cacc3fa3eca, type: 2}
   cost:
   - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
-    quantity: 1
+    quantity: 0
   - item: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
-    quantity: 20
+    quantity: 0

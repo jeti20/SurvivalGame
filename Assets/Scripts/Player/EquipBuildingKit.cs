@@ -11,7 +11,7 @@ public class EquipBuildingKit : Equip
 
     public float placementUpdateRate = 0.03f;
     private float lastPlacementUpdateTime;
-    public float placementMaxDistance = 5.0f;
+    public float placementMaxDistance = 8.0f;
 
     public LayerMask placementLayerMask;
 

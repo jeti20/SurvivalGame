@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5039a8c506ce8fb4881eb6ac5891ab24, type: 3}
-  m_Name: Axe
+  m_Script: {fileID: 11500000, guid: 532293ebcdea5c64e80e428f5ad8ed10, type: 3}
+  m_Name: StoneWall
   m_EditorClassIdentifier: 
-  itemToCraft: {fileID: 11400000, guid: c09d5929fea55a140a712d9700a96b00, type: 2}
+  displayName: Stone Wall
+  icon: {fileID: 21300000, guid: cc1bbb51678253e4f92e07a22878088b, type: 3}
+  spawnPrefab: {fileID: 5868055601425207404, guid: 114bdcaf4310a6a4bb697567e88acd1f, type: 3}
+  previewPrefab: {fileID: 5821171349620157127, guid: 5f634a24f46b4f14a8cc113095c7ec30, type: 3}
   cost:
   - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
     quantity: 0
