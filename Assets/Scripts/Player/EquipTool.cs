@@ -9,7 +9,8 @@ public class EquipTool : Equip
     public float attackDistance;
 
     [Header("Resource Gathering")]
-    public bool doesGatherResources;
+    public bool canGatherWood;
+    public bool canGatherStone;
 
     [Header("Combat")]
     public bool doesDealDamage;
@@ -54,9 +55,15 @@ public class EquipTool : Equip
         if (Physics.Raycast(ray, out hit, attackDistance * 3))
         {
             // did we hit a resource?
-            if (doesGatherResources && hit.collider.GetComponent<Resource>())
+            if (canGatherStone && hit.collider.GetComponent<Resource>() && hit.collider.CompareTag("Stone"))
             {
                 hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
+                Debug.Log("Stone");
+            }
+            if (canGatherWood && hit.collider.GetComponent<Resource>() && hit.collider.CompareTag("Wood"))
+            {
+                hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
+                Debug.Log("Wood");
             }
             // did we hit a damagable?
             if (doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
