@@ -316,7 +316,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.9, y: 2.74, z: 6.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7159, y: 1.7159, z: 1.7159}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6983673251544000916}
@@ -338,7 +338,6 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 4
   dropOnDeath:
-  - {fileID: 11400000, guid: 23a75514a6030584faca7b871480670a, type: 2}
   - {fileID: 11400000, guid: 8431763eeaa75064fa0cb74ac4c77319, type: 2}
   - {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
   aiType: 2
@@ -351,6 +350,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 1.5
   attackDistance: 2
+  agentVelocityMagnitute: 0
 --- !u!195 &1708547835210610780
 NavMeshAgent:
   m_ObjectHideFlags: 0

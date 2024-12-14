@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 501d6fd8ccc038948a6eab2b3aced84c, type: 3}
-  m_Name: Beggining_04
+  m_Name: Beggining_11
   m_EditorClassIdentifier: 
-  yourIcon: {fileID: 21300000, guid: f0694fca12fb54144beb1acc468894bb, type: 3}
-  notificationMessage: Open Inventory and eat your mushrom. Watch your hunger and
-    thirst dissapear a little bit.
+  yourIcon: {fileID: 21300000, guid: 99e98cc6b9a31924ba8e01970b8b2d09, type: 3}
+  notificationMessage: Zoombies, I think I have to use sword to kill them.
   removeAfterExit: 0
   disableAfterTimer: 1
   disableTrigger: 1
-  disabletimer: 5
+  disabletimer: 4

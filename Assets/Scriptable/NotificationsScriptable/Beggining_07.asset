@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Beggining_07
   m_EditorClassIdentifier: 
   yourIcon: {fileID: 21300000, guid: b776a8890e2151144a7bf8ac0e84c4ba, type: 3}
-  notificationMessage: It looks liek a Anvil, maybe I can do something with it...
+  notificationMessage: It looks like an Anvil, maybe I can do something with it...
   removeAfterExit: 0
   disableAfterTimer: 1
   disableTrigger: 1

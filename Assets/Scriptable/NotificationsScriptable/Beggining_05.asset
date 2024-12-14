@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Beggining_05
   m_EditorClassIdentifier: 
   yourIcon: {fileID: 21300000, guid: 04bef2a98560abc46a165c893274b1cf, type: 3}
-  notificationMessage: Gather some resources using axe.
+  notificationMessage: Gather some resource.
   removeAfterExit: 0
   disableAfterTimer: 1
   disableTrigger: 1
