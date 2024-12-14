@@ -34,4 +34,12 @@ To Do:
 ![image](https://github.com/user-attachments/assets/81d27380-6995-49bb-aeb2-61659c64866f)
 
 Assets used:
+- https://assetstore.unity.com/packages/3d/environments/urban/the-shed-10303
+- https://assetstore.unity.com/packages/3d/environments/landscapes/simple-low-poly-nature-pack-157552
 - https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032
+- https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153
+- https://assetstore.unity.com/packages/3d/characters/lowpoly-universal-character-modular-199781
+- https://assetstore.unity.com/packages/3d/characters/animals/animated-goat-and-sheep-3d-low-poly-free-251910
+- https://assetstore.unity.com/packages/3d/environments/aa-3d-low-poly-nature-pack-227820
+- https://assetstore.unity.com/packages/2d/textures-materials/25-free-stylized-textures-grass-ground-floors-walls-more-241895
+- https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153
