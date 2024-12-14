@@ -17,7 +17,8 @@ Already implemented:
 - Menu (in developoment)
 - Cutscene Intro
 - Coneccted notifiaction sytem with picking up items
-- -Background Music
+- Background Music
+- SFX (walking/axe/pickaxe)
 
   
 To Do:
@@ -31,6 +32,7 @@ To Do:
   - Add sounds for different actions
   - ~~Add background music~~
   - ~~Notification System~~
+  - ~~SFX~~
 
 ![image](https://github.com/user-attachments/assets/81d27380-6995-49bb-aeb2-61659c64866f)
 
@@ -45,3 +47,6 @@ Assets used:
 - https://assetstore.unity.com/packages/3d/environments/aa-3d-low-poly-nature-pack-227820
 - https://assetstore.unity.com/packages/2d/textures-materials/25-free-stylized-textures-grass-ground-floors-walls-more-241895
 - https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153
+- https://freesound.org/people/wavecal22/sounds/537434/
+- https://freesound.org/people/wavecal22/sounds/537386/
+- https://freesound.org/people/Sadiquecat/sounds/688594/
