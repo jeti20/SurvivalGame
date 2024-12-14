@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 2076360303773062837}
   m_Layer: 10
   m_Name: Rock_resource
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,9 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4306ade9eb632094398125d5774a2f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToGive: {fileID: 11400000, guid: 8431763eeaa75064fa0cb74ac4c77319, type: 2}
-  quantityPerHit: 1
-  capacity: 2
+  itemToGive: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
+  quantityPerHit: 2
+  capacity: 16
   hitParticle: {fileID: 1903154192727724375, guid: 99a06d438834ba64c88f810c4abcb850, type: 3}
 --- !u!65 &88964671779140681
 BoxCollider:

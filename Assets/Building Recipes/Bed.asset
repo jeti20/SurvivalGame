@@ -17,7 +17,7 @@ MonoBehaviour:
   spawnPrefab: {fileID: 97669437634262213, guid: 9673f6e3dd78ba941af72c9d0b96066d, type: 3}
   previewPrefab: {fileID: 7903338035569753452, guid: 4d668a88e6e00a04b925b4e3639ce242, type: 3}
   cost:
-  - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+  - item: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
     quantity: 35
-  - item: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+  - item: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
     quantity: 10

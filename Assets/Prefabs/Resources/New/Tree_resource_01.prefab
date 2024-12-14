@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5271195602742522893}
   m_Layer: 10
   m_Name: Tree_resource_01
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4306ade9eb632094398125d5774a2f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToGive: {fileID: 11400000, guid: 3dc0a4cfab5b2134795066547c46bccf, type: 2}
+  itemToGive: {fileID: 11400000, guid: d8a242403be584940b569e362ff55406, type: 2}
   quantityPerHit: 5
   capacity: 1
   hitParticle: {fileID: 1271577328544690704, guid: 78c1603f96b3d6f40b3c7261db23a022, type: 3}
