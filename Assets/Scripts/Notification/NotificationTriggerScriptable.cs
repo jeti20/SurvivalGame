@@ -34,13 +34,18 @@ public class NotificationTriggerScriptable : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Exit");
-        if (other.CompareTag("Player") && noteScriptable.removeAfterExit && noteScriptable.disableTrigger)
+        if (other.CompareTag("Player"))
         {
-            RemoveNotificationWithTrigger();
-        }
-        else
-        {
-            RemoveNotificationWithTrigger();
+            // Jeœli removeAfterExit i disableTrigger s¹ oba true, usuñ powiadomienie
+            if (noteScriptable.removeAfterExit && noteScriptable.disableTrigger)
+            {
+                RemoveNotificationWithTrigger();
+            }
+            // Jeœli disableTrigger jest false, pozwól powiadomieniu dzia³aæ bez usuwania obiektu
+            else if (!noteScriptable.disableTrigger)
+            {
+                RemoveNotificationWithOutTrigger();
+            }
         }
     }
 
