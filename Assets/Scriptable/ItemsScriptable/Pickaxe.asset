@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: faebf057cc9fa4b4ab2020816d46b5ab, type: 3}
-  m_Name: Axe_new
+  m_Name: Pickaxe
   m_EditorClassIdentifier: 
-  displayName: Axe
-  description: Can be used to gather wood.
+  displayName: Pickaxe
+  description: Can be used to gather stone.
   type: 1
-  icon: {fileID: 21300000, guid: a8ba69c6097f447409e0fa0e2fa11ef0, type: 3}
-  dropPrefab: {fileID: 3058356568843517025, guid: efc873862ab6ef34b8e83712f599d465, type: 3}
+  icon: {fileID: 21300000, guid: 6f23a4c1f6d19cd4dbb684890123af22, type: 3}
+  dropPrefab: {fileID: 4599225742762728630, guid: 1d8716d839f08f74e925003132172ca7, type: 3}
   canStack: 0
   maxStackAmount: 0
   consumables: []
-  equipPrefab: {fileID: 1154596290638426496, guid: 961ec59041daf6845872bc7d69595b3e, type: 3}
+  equipPrefab: {fileID: 3429434628774898519, guid: f2dd837b872820645bba379791a8513d, type: 3}
