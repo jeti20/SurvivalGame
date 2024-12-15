@@ -39,10 +39,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    /// <summary>
     /// Odtwarzanie jednorazowego dŸwiêku.
-    /// </summary>
-    /// <param name="clip">Klip AudioClip do odtworzenia.</param>
     public void PlaySound(AudioClip clip)
     {
         if (effectsSource != null && clip != null)
@@ -51,10 +48,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    /// <summary>
     /// Zatrzymanie odtwarzania dŸwiêku, jeœli jest aktywny.
-    /// </summary>
-    /// <param name="source">AudioSource, który ma zostaæ zatrzymany.</param>
     public void StopSound(AudioSource source)
     {
         if (source != null && source.isPlaying)
@@ -63,9 +57,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    /// <summary>
     /// Odtwarzanie dŸwiêku chodzenia.
-    /// </summary>
     public void PlayWalkSound()
     {
         if (walkSoundSource != null && !walkSoundSource.isPlaying)
