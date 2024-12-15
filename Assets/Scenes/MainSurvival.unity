@@ -19903,7 +19903,6 @@ MonoBehaviour:
   minXLook: -85
   maxXLook: 85
   lookSensitivity: 0.2
-  walkSound: {fileID: 8300000, guid: 1d09b57000d7bf944b2b884057247614, type: 3}
   canLook: 1
 --- !u!114 &1226641021
 MonoBehaviour:
@@ -20192,7 +20191,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226641016}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -31344,10 +31343,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 81c87ce75474ef84f9968b4ae909681b, type: 3}
+  m_Resource: {fileID: 8300000, guid: 81c87ce75474ef84f9968b4ae909681b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.53
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -36311,11 +36310,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d854c42d11a034d9e91ccd2ace88c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 8618451389573718129}
-  axeSound: {fileID: 8300000, guid: b52c3a366ce463d448bcc824fe6da1a2, type: 3}
-  pickaxeSound: {fileID: 8300000, guid: 365776ca44f33524c9a1351177523719, type: 3}
   effectsSource: {fileID: 1892532090}
-  background: {fileID: 8300000, guid: 72b991bfe5f413f4eb88b18e5ac4c199, type: 3}
+  walkSoundSource: {fileID: 1892532090}
+  birdsSoundSource: {fileID: 8618451389573718130}
+  axeSound: {fileID: 8300000, guid: 365776ca44f33524c9a1351177523719, type: 3}
+  pickaxeSound: {fileID: 8300000, guid: 3c5f83f48f6e6d245ae987bc530e6790, type: 3}
+  birdsSound: {fileID: 8300000, guid: 292338db26addd3479506de31bfc6720, type: 3}
 --- !u!65 &7760651029969956670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36346,15 +36346,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6541577153997780002}
-  - component: {fileID: 8618451389573718129}
+  - component: {fileID: 8618451389573718130}
   m_Layer: 0
-  m_Name: MusicAudioSource
+  m_Name: BirdsAudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &8618451389573718129
+--- !u!82 &8618451389573718130
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36364,12 +36364,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 72b991bfe5f413f4eb88b18e5ac4c199, type: 3}
-  m_Resource: {fileID: 8300000, guid: 72b991bfe5f413f4eb88b18e5ac4c199, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.19
+  m_audioClip: {fileID: 8300000, guid: 292338db26addd3479506de31bfc6720, type: 3}
+  m_Resource: {fileID: 8300000, guid: 292338db26addd3479506de31bfc6720, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.27
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

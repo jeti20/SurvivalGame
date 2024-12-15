@@ -20,9 +20,6 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 mouseDelta;
 
-    private AudioSource audioSource;
-    [SerializeField] AudioClip walkSound;
-
     [HideInInspector]
     public bool canLook = true;
 
@@ -36,7 +33,6 @@ public class PlayerController : MonoBehaviour
     {
         // get our components
         rig = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
 
         instance = this;
     }
@@ -72,15 +68,6 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    /*private void WalkingSound()
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(walkSound);
-        }
-    }*/
-
-
     void CameraLook ()
     {
         // rotate the camera container up and down
@@ -99,19 +86,19 @@ public class PlayerController : MonoBehaviour
     }
 
     // called when we press WASD - managed by the Input System
-    public void OnMoveInput (InputAction.CallbackContext context)
+    public void OnMoveInput(InputAction.CallbackContext context)
     {
         // are we holding down a movement button?
-        if(context.phase == InputActionPhase.Performed)
+        if (context.phase == InputActionPhase.Performed)
         {
             curMovementInput = context.ReadValue<Vector2>();
-            audioSource.PlayOneShot(walkSound);
+            AudioManager.instance.PlayWalkSound();
         }
         // have we let go of a movement button?
-        else if(context.phase == InputActionPhase.Canceled)
+        else if (context.phase == InputActionPhase.Canceled)
         {
             curMovementInput = Vector2.zero;
-            audioSource.Stop();
+            AudioManager.instance.StopWalkSound();
         }
     }
 
