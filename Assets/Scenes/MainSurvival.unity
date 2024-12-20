@@ -22008,6 +22008,7 @@ GameObject:
   - component: {fileID: 1307187764}
   - component: {fileID: 1307187763}
   - component: {fileID: 1307187762}
+  - component: {fileID: 1307187765}
   m_Layer: 10
   m_Name: w
   m_TagString: Teleport
@@ -22049,8 +22050,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.10232658, y: 1.0294436, z: 1}
+  m_Center: {x: -0.015963856, y: 0.014722192, z: 1.4700956e-16}
 --- !u!23 &1307187763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22104,6 +22105,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307187760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1307187765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307187760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f97008bc01f2439d7dc3323358a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newColor: {r: 0.09411764, g: 1, b: 0.22674441, a: 1}
 --- !u!1001 &1320548703
 PrefabInstance:
   m_ObjectHideFlags: 0

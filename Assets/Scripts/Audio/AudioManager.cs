@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Utrzymanie AudioManager przy zmianie scen
+            //DontDestroyOnLoad(gameObject); // Utrzymanie AudioManager przy zmianie scen
         }
         else
         {
