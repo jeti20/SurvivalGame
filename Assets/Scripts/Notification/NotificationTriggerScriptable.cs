@@ -16,17 +16,30 @@ public class NotificationTriggerScriptable : MonoBehaviour
     [SerializeField] private Animator notificationAnim;
     private BoxCollider objectColider;
 
+
+    public GameObject recipeToActivate;
+
     private void Awake()
     {
         objectColider = GetComponent<BoxCollider>();
     }
-
+    public bool talkedWithNPC = false;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Enter");
         if (other.CompareTag("Player"))
         {
             StartCoroutine(EnableNotification());
+
+            //checking if trigger has teleport tag
+            if (gameObject.CompareTag("Teleport"))
+            {
+                talkedWithNPC = true;
+
+                if (recipeToActivate != null)
+                {
+                    recipeToActivate.SetActive(true);
+                }
+            }
         }
 
     }
