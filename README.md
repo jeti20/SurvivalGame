@@ -1,6 +1,6 @@
 # SurvivalGame
 
-The survival game is still in progress
+You can play this gamer here --> https://dehydrogenase.itch.io/survivalsample
 
 Already implemented:
 - Movement - Input system
