@@ -69,7 +69,11 @@ public class EquipTool : Equip
                 Debug.Log("Wood");
                 AudioManager.instance.PlaySound(AudioManager.instance.axeSound);
             }
-            // did we hit a damagable?
+            if (hit.collider.GetComponent<Resource>() && hit.collider.CompareTag("Teleport"))
+            {
+                Debug.Log("Teleport");
+            }
+                // did we hit a damagable?
             if (doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
             {
                 hit.collider.GetComponent<IDamagable>().TakePhysicalDamage(damage);
