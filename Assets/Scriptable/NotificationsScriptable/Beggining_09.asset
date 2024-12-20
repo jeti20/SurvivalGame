@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Beggining_09
   m_EditorClassIdentifier: 
   yourIcon: {fileID: 21300000, guid: 99e98cc6b9a31924ba8e01970b8b2d09, type: 3}
-  notificationMessage: Craft hammer to build!
+  notificationMessage: Craft hammer to build! Equip hammer and click RMB to build!
   removeAfterExit: 0
   disableAfterTimer: 1
   disableTrigger: 1
-  disabletimer: 3
+  disabletimer: 4

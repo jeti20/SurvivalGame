@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToGive: {fileID: 11400000, guid: d40009a38e2c9b94a9927618fa7461a0, type: 2}
-  quantityPerHit: 2
-  capacity: 16
+  quantityPerHit: 1
+  capacity: 6
   hitParticle: {fileID: 1903154192727724375, guid: 99a06d438834ba64c88f810c4abcb850, type: 3}
 --- !u!65 &88964671779140681
 BoxCollider:

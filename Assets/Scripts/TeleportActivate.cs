@@ -43,7 +43,7 @@ public class TeleportActivate : MonoBehaviour
         }
         if (other.CompareTag("Player") && isActivated == true)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 }

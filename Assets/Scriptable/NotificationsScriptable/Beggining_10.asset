@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501d6fd8ccc038948a6eab2b3aced84c, type: 3}
   m_Name: Beggining_10
   m_EditorClassIdentifier: 
-  yourIcon: {fileID: 21300000, guid: 99e98cc6b9a31924ba8e01970b8b2d09, type: 3}
+  yourIcon: {fileID: 21300000, guid: 95c64d17c45dd264380a7f5a657f423a, type: 3}
   notificationMessage: Ehhhh, I just want to get out of here... these ruins looks
     suspicious
   removeAfterExit: 0

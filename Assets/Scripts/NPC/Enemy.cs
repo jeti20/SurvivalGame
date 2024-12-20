@@ -50,10 +50,12 @@ public class Enemy : MonoBehaviour, IDamagable
     private NavMeshAgent agent;
     private Animator anim;
     private SkinnedMeshRenderer[] meshRenderers;
+    public AudioClip damageSound;
+    private AudioSource audioSource;
 
     void Awake ()
     {
-        // get components
+        audioSource = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
 
@@ -231,12 +233,14 @@ public class Enemy : MonoBehaviour, IDamagable
         return Vector3.Angle(transform.position - PlayerController.instance.transform.position, transform.position + targetPos);
     }
 
+
+
     // called when we take physical damage
     public void TakePhysicalDamage(int damageAmount)
     {
         health -= damageAmount;
-
-        if(health <= 0)
+        audioSource.PlayOneShot(damageSound);
+        if (health <= 0)
             Die();
 
         StartCoroutine(DamageFlash());
