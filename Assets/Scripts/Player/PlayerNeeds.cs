@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerNeeds : MonoBehaviour, IDamagable
 {
@@ -93,6 +94,7 @@ public class PlayerNeeds : MonoBehaviour, IDamagable
     public void Die ()
     {
         Debug.Log("Player is dead");
+        SceneManager.LoadScene(1);
     }
 }
 

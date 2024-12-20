@@ -31,6 +31,7 @@ public class Animal_Goat : MonoBehaviour, IDamagable
 
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
         meshRenderers = GetComponentsInChildren<SkinnedMeshRenderer>();
@@ -139,10 +140,12 @@ public class Animal_Goat : MonoBehaviour, IDamagable
         return hit.position;
     }
 
+    public AudioClip damageSound;
+    private AudioSource audioSource;
     public void TakePhysicalDamage(int damageAmount)
     {
         health -= damageAmount;
-
+        audioSource.PlayOneShot(damageSound);
         if (health <= 0)
         {
             Die();

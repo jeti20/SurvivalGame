@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501d6fd8ccc038948a6eab2b3aced84c, type: 3}
   m_Name: Beggining_05
   m_EditorClassIdentifier: 
-  yourIcon: {fileID: 21300000, guid: 04bef2a98560abc46a165c893274b1cf, type: 3}
+  yourIcon: {fileID: 21300000, guid: 8328b65805522e243bf3f66599c3e33d, type: 3}
   notificationMessage: Gather some resource.
   removeAfterExit: 0
   disableAfterTimer: 1
